@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>BlockTrail - Empowering You to Navigate the World of Cryptocurrency</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Empowering You to Navigate the World of Cryptocurrency" />
+        <meta name="keywords" content="Bitcoin, Cryptocurrency, Crypto, BTC, Cryptocoin, Buy Crypto, Sell Crypto" />
+        <meta content="BlockTrail" name="author" />
+        <meta content="1.0.0" name="version" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/tiny-slider.css" rel="stylesheet" />
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+        <!-- Main css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    </head>
+
+    <body>
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo Start-->
+                <a class="logo" href="index.html">
+                    <h4 style="padding-top:10%;">BlockTrail</h4>
+                </a>
+                <!-- Logo end-->
+                
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item search-icon mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-icon btn-pills btn-primary"><i class="uil uil-user"></i></div>
+                        </a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-right nav-light">
+
+                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="market.html" class="sub-menu-item">Market</a></li>
+                        <li><a href="token.html" class="sub-menu-item">Token</a></li>
+                        <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
+                        <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-home d-flex align-items-center">
+            <div class="bg-overlay bg-gradient-primary"></div>
+            <div class="container">
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="title-heading">
+                            <h4 class="display-4 fw-bold text-white title-dark mb-4">Buy & Sell <br>Crypto in Minutes</h4>
+                            <p class="text-white-50 para-desc">With Cryptor Trade, you can be sure your trading skills are matched with excellent service.</p>
+
+                            <div class="mt-4 mb-1">
+                                <a href="token.html" class="btn btn-success">Open an account</a>
+                            </div>
+                            <small class="text-white-50"><span class="text-danger">*</span>No credit card required</small>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6">
+                        <img src="images/hero/one.png" class="img-fluid mover" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container--> 
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-3">Buy crypto at true cost</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Buy and sell 100+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0 table-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="fw-normal text-muted py-4" style="min-width: 250px;">Name</th>
+                                        <th scope="col" class="fw-normal text-muted py-4" style="width: 150px;">Price</th>
+                                        <th scope="col" class="fw-normal text-muted py-4" style="width: 150px;">Change(%)</th>
+                                        <th scope="col" class="fw-normal text-muted py-4" style="width: 150px;">Change($)</th>
+                                        <th scope="col" class="fw-normal text-muted py-4" style="width: 150px;">Marketcap</th>
+                                        <th scope="col" class="fw-normal text-end text-muted py-4" style="width: 100px;">Trade</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th class="py-3">
+                                            <div class="align-items-center">
+                                                <img src="images/coin/bitcoin.png" class="me-3" height="32" alt="">
+                                                <p class="mb-0 d-inline fw-normal h6">Bitcoin <span class="text-muted">BTC</span> </p>
+                                            </div>
+                                        </th>
+                                        <td>$34587</td>
+                                        <td class="text-danger">-2.5%</td>
+                                        <td class="text-danger">-$745</td>
+                                        <td class="text-muted">$725,354M</td>
+                                        <td class="text-end"><a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Trade</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="py-3">
+                                            <div class="align-items-center">
+                                                <img src="images/coin/litecoin.png" class="me-3" height="32" alt="">
+                                                <p class="mb-0 d-inline fw-normal h6">Litecoin <span class="text-muted">LTC</span></p>
+                                            </div>
+                                        </th>
+                                        <td>$216</td>
+                                        <td class="text-success">+.264%</td>
+                                        <td class="text-success">+$.264</td>
+                                        <td class="text-muted">$11,100M</td>
+                                        <td class="text-end"><a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Trade</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="py-3">
+                                            <div class="align-items-center">
+                                                <img src="images/coin/auroracoin.png" class="me-3" height="32" alt="">
+                                                <p class="mb-0 d-inline fw-normal h6">Auroracoin <span class="text-muted">ARC</span> </p>
+                                            </div>
+                                        </th>
+                                        <td>$452</td>
+                                        <td class="text-danger">-1.9%</td>
+                                        <td class="text-danger">-$1.9</td>
+                                        <td class="text-muted">$45,785M</td>
+                                        <td class="text-end"><a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Trade</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="py-3">
+                                            <div class="align-items-center">
+                                                <img src="images/coin/coinye.png" class="me-3" height="32" alt="">
+                                                <p class="mb-0 d-inline fw-normal h6">Coinye <span class="text-muted">CNY</span> </p>
+                                            </div>
+                                        </th>
+                                        <td>$154</td>
+                                        <td class="text-success">+1.05%</td>
+                                        <td class="text-success">+$1.05</td>
+                                        <td class="text-muted">$85,478M</td>
+                                        <td class="text-end"><a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Trade</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="py-3">
+                                            <div class="align-items-center">
+                                                <img src="images/coin/ethereum.png" class="me-3" height="32" alt="">
+                                                <p class="mt-2 d-inline fw-normal h6">Ethereum Coin <span class="text-muted">ETH</span> </p>
+                                            </div>
+                                        </th>
+                                        <td>$854</td>
+                                        <td class="text-success">+1.705%</td>
+                                        <td class="text-success">+$1.705</td>
+                                        <td class="text-muted">$112,452M</td>
+                                        <td class="text-end"><a href="javascript:void(0)" class="btn btn-sm btn-soft-primary">Trade</a></td>
+                                    </tr>
+                                </tbody>
+                            </table><!--end table-->
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="market.html" class="text-primary small">View more cryptocurrencies <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div><!--end col-->	
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="images/crypto.png" class="img-fluid d-block mx-auto" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="apps-links bg-light mx-auto d-block text-center rounded py-3">
+                            <i class="uil uil-apple icon text-dark h4"></i>
+                            <h6 class="fw-normal mb-0 app-name text-muted mt-2">App Store</h6>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="apps-links bg-light mx-auto d-block text-center rounded py-3">
+                            <i class="uil uil-google-play icon text-dark h4"></i>
+                            <h6 class="fw-normal mb-0 app-name text-muted mt-2">Play Store</h6>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="apps-links bg-light mx-auto d-block text-center rounded py-3">
+                            <i class="uil uil-monitor-heart-rate icon text-dark h4"></i>
+                            <h6 class="fw-normal mb-0 app-name text-muted mt-2">MacOS</h6>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="apps-links bg-light mx-auto d-block text-center rounded py-3">
+                            <i class="uil uil-windows icon text-dark h4"></i>
+                            <h6 class="fw-normal mb-0 app-name text-muted mt-2">Windows</h6>
+                        </a>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2">
+                        <a href="javascript:void(0)" class="apps-links bg-light mx-auto d-block text-center rounded py-3">
+                            <i class="uil uil-linux icon text-dark h4"></i>
+                            <h6 class="fw-normal mb-0 app-name text-muted mt-2">Linux</h6>
+                        </a>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start -->
+        <section class="section bg-light" id="roadmap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-4">Success Roadmap</h4>
+                            <p class="text-muted mx-auto para-desc mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="tiny-four-item tiny-timeline">
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-pen"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">January, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Planning</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-bitcoin"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">February, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Blockchain Starts</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-clipboard-blank"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">March, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Expanded Licensing</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card p-4 border-0 feature key-feature feature-light bg-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-money-insert"></i>
+                                    </div>
+                                    <p class="text-white-50 mb-0">April, 2025</p>
+                                    <h6 class="text-light title-dark mb-0 mt-1">Token Sale</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-airplay"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">May, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Project Launch</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-euro-circle"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">June, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Tier 5 sold</h6>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slide text-center">
+                                <div class="card pt-4 border-0 feature key-feature feature-primary item-box">
+                                    <div class="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                                        <i class="uil uil-desktop"></i>
+                                    </div>
+                                    <p class="text-muted mb-0">December, 2025</p>
+                                    <h6 class="mb-0 mt-1 text-dark">Project Live</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="me-lg-5">
+                            <img src="images/crypto-cell.png" class="img-fluid" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 mt-4 pt-2">
+                        <div class="section-title mb-4 pb-2">
+                            <h6 class="text-primary mb-0">Crypto Earn</h6>
+                            <h4 class="title mb-4 mt-2">Deposit crypto, <br> earn interest</h4>
+                            <p class="text-muted mb-0">Choose from 30+ cryptocurrencies and stablecoins.</p>
+
+                            <a href="javascript:void(0)" class="btn btn-soft-primary mt-4">Calculate Earning</a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mt-4 pt-2">
+                                <h5 class="text-muted">Up to</h5>
+                                <h2 class="mb-0 display-4 fw-bold text-primary"><span class="counter-value" data-target="5.8">3</span>%</h2>
+                                <h4>p.a. on cryptos</h4>
+                            </div><!--end col-->
+
+                            <div class="col-md-6 mt-4 pt-2">
+                                <h5 class="text-muted">Up to</h5>
+                                <h2 class="mb-0 display-4 fw-bold text-primary"><span class="counter-value" data-target="12">3</span>%</h2>
+                                <h4>p.a. on stablecoins</h4>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h6 class="text-primary">Our Vision</h6>
+                            <h4 class="title mb-3 mt-2">Cryptocurrency in Every Wallet</h4>
+
+                            <p class="text-muted para-desc mx-auto mb-0">With Cryptor Trade, you can be sure your trading skills are matched with excellent service.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center my-4 py-2">
+                    <div class="col-md-6">
+                        <img src="images/icon-gradient.png" class="img-fluid" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="text-center">
+                            <h5 class="text-muted mb-0">Founded in</h5>
+                            <h2 class="mb-0 display-5 mt-4 fw-bold text-primary"><span class="counter-value" data-target="2025">2025</span></h2>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="text-center">
+                            <h5 class="text-muted mb-0">Team Member</h5>
+                            <h2 class="mb-0 display-5 mt-4 fw-bold text-primary"><span class="counter-value" data-target="1000">551</span>+</h2>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="text-center">
+                            <h5 class="text-muted mb-0">Users</h5>
+                            <h2 class="mb-0 display-5 mt-4 fw-bold text-primary"><span class="counter-value" data-target="10">1</span>M</h2>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="text-center">
+                            <h5 class="text-muted mb-0">Insurance Coverage (USD)</h5>
+                            <h2 class="mb-0 display-5 mt-4 fw-bold text-primary"><span class="counter-value" data-target="410">210</span>M</h2>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Vision End -->
+
+        <section class="section">
+        
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="section-title">
+                            <h4 class="title mb-0">Popular Items</h4>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-4 text-end d-none d-md-block">
+                        <a href="nft-explore.html" class="btn btn-primary">See More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="tiny-five-item">
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/1.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">The future of ETH</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/01.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Jordan</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+        
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/2.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">ETH never die</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/02.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Sofia</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+        
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/3.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">Future coming soon</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/03.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Cristina</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+        
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/4.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">Elon Musk silver coin</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/04.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Jack</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+        
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/5.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">Amazing digital art</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/05.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Lilia</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+        
+                            <div class="tiny-slide">
+                                <div class="nft-items nft-item-primary">
+                                    <div class="nft-image position-relative overflow-hidden rounded-md shadow-md">
+                                        <img src="images/nft/500/6.jpg" class="img-fluid" alt="">
+                                        <div class="pop-icon">
+                                            <a href="#" class="btn bg-white btn-pills btn-icon shadow"><i class="uil uil-arrow-right text-dark"></i></a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="content pt-3">
+                                        <a href="#" class="title h6 mb-1 text-dark d-block">Ribbon Hunter</a>
+                                        <small class="gradient-text d-block">0.75ETH</small>
+        
+                                        <ul class="pt-3 mt-2 border-top d-flex justify-content-between align-items-center list-unstyled">
+                                            <li class="d-flex author align-items-center">
+                                                <div class="position-relative">
+                                                    <img src="images/client/06.jpg" class="avatar avatar-sm-sm rounded-pill shadow" alt="">
+                                                    <div class="position-absolute top-0 start-0 translate-middle pt-2 ps-2">
+                                                        <i class="mdi mdi-check-circle mdi-18px text-success"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="ps-2 text-dark name">Anderson</a>
+                                            </li>
+        
+                                            <li>
+                                                <span>23 <a href="javascrpit:void(0)" class="like"><i class="mdi mdi-heart align-middle"></i></a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--end tiny slide-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <!-- Footer Start -->
+        <footer class="bg-footer">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-100 footer-border-top">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <h5 class="text-light footer-head">BlockTrail</h5>
+                                    </a>
+                                    <p class="text-foot mt-4">With BlockTrail Trade, you can be sure your trading skills are matched with excellent service.</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+
+                                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="text-light footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="index.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Home</a></li>
+                                        <li><a href="market.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Market</a></li>
+                                        <li><a href="token.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Token</a></li>
+                                        <li><a href="aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>About</a></li>
+                                        <li><a href="contact.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Contact Us</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="text-light footer-head">Pages</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>FAQ</a></li>
+                                        <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Features</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-border-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-8">
+                            <div class="text-sm-start text-center">
+                                <p class="mb-0 text-foot">© <script>document.write(new Date().getFullYear())</script> BlockTrail. Design with <i class="mdi mdi-heart text-danger"></i>.</p>
+                            </div>
+                        </div><!--end col-->
+    
+                        <div class="col-sm-4 mt-4 mt-sm-0">
+                            <div class="text-sm-end text-center">
+                                <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-pills btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+                            </div>                            
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+        
+        
+        
+        
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js "></script>
+        <script src="js/feather.min.js"></script>
+        
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script>
+        <script src="js/app.js"></script>
+        
+    </body>
+
+</html>
